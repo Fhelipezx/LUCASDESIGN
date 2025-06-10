@@ -199,11 +199,6 @@ function openGallery(projectType) {
             content: '<iframe src="https://xd.adobe.com/embed/0a1fc37f-b835-4b03-9147-82438eb95950-5f4c/" width="100%" height="600" frameborder="0" allowfullscreen></iframe>',
             caption: 'Protótipo interativo de aplicativo para PetShop'
         },
-        {
-            type: 'image',
-            content: '<img src="app.png" alt="Telas do aplicativo">',
-            caption: 'Telas principais do aplicativo'
-        }
     ];
     
     items.forEach(item => {
