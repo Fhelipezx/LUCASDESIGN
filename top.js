@@ -191,29 +191,34 @@ function openGallery(projectType) {
             galleryContent.appendChild(item);
         });  
     } else if (projectType === 'ui-ux') {
-        galleryTitle.textContent = 'Projeto UI/UX - Protótipo Interativo';
-        
-        const items = [
-            { 
-                type: 'iframe', 
-                content: '<iframe src="https://xd.adobe.com/embed/5156abb4-85fe-4933-bdc3-62581b227cdc-0405/?fullscreen" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>',
-                caption: 'Protótipo interativo'
-            },
-        ];
-        
-        items.forEach((item, index) => {
-            const galleryItem = document.createElement('div');
-            galleryItem.className = 'gallery-item';
-            galleryItem.innerHTML = `
-                <div class="gallery-image">
-                    ${item.content}
-                </div>
-                <div class="gallery-caption">
-                    <p>${item.caption}</p>
-                </div>
-            `;
-            galleryContent.appendChild(galleryItem);
-        });
+    galleryTitle.textContent = 'Projeto UI/UX - Protótipo Interativo';
+    
+    const items = [
+        { 
+            type: 'iframe', 
+            content: '<iframe src="https://xd.adobe.com/embed/0a1fc37f-b835-4b03-9147-82438eb95950-5f4c/" width="100%" height="600" frameborder="0" allowfullscreen></iframe>',
+            caption: 'Protótipo interativo de aplicativo para PetShop'
+        },
+        {
+            type: 'image',
+            content: '<img src="app.png" alt="Telas do aplicativo">',
+            caption: 'Telas principais do aplicativo'
+        }
+    ];
+    
+    items.forEach(item => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        galleryItem.innerHTML = `
+            <div class="gallery-image">
+                ${item.content}
+            </div>
+            <div class="gallery-caption">
+                <p>${item.caption}</p>
+            </div>
+        `;
+        galleryContent.appendChild(galleryItem);
+    });
 
     } else if (projectType === 'embalagem') {
         galleryTitle.textContent = 'Redesign de Marca - Branding';
