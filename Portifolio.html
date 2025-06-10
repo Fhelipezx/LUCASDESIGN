@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Criativo - Lucas Grafi</title>
+    <link rel="stylesheet" href="ESTILO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="home.html"><img src="ChatGPT Image 23 de mai. de 2025, 10_45_19.png" alt="Logo Lucas Grafi"></a>
+                    <a href="#">Lucas Grafi</a>
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="servicos.html">Serviços</a>
+                        <li><a href="Portifolio.html">Portifólio</a></li>
+                        <li><a href="Depoimentos.html">Depoimentos</a></li>
+                        <li><a href="#contato" class="btn btn-primary">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="nav-mobile" id="mobile-menu">
+            <button class="close-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="home.html#projetos">Projetos</a></li>
+                <li><a href="home.html#sobre">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="home.html#contato" class="btn btn-primary">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-hero-content">
+                <h1>Meu Portfólio Criativo</h1>
+                <p>Explore uma seleção dos meus melhores trabalhos em design gráfico, branding e publicidade digital. Cada projeto conta uma história única de estratégia e criatividade.</p>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="social">Social Media</button>
+                    <button class="filter-btn" data-filter="packaging">Packaging</button>
+                    <button class="filter-btn" data-filter="digital">UI/UX</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Projeto 1 -->
+                <div class="gallery-item branding" data-category="branding">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="jales.png" alt="Redesign de Marca - Empresa de Pintura">
+                            <div class="gallery-overlay">
+                                <h3>Redesign de Marca</h3>
+                                <p>Empresa de Pintura</p>
+                                <button class="btn btn-outline view-details" data-project="branding-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Branding</span>
+                            <h3>Jales Pinturas</h3>
+                            <p>Revitalização completa da identidade visual</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="gallery-item social" data-category="social">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="lanchonetes.jpg" alt="Campanha Digital - Lanchonete">
+                            <div class="gallery-overlay">
+                                <h3>Social Media</h3>
+                                <p>Lanchonete Local</p>
+                                <button class="btn btn-outline view-details" data-project="social-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Social Media</span>
+                            <h3>Lanchonete Sabor & Arte</h3>
+                            <p>Gestão completa de mídias sociais</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="gallery-item packaging" data-category="packaging">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="cafee.png" alt="Design de Embalagem - Cafeteria">
+                            <div class="gallery-overlay">
+                                <h3>Packaging</h3>
+                                <p>Linha de Cafés Especiais</p>
+                                <button class="btn btn-outline view-details" data-project="packaging-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Packaging</span>
+                            <h3>Café Aroma</h3>
+                            <p>Design de embalagem premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="gallery-item digital" data-category="digital">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="app.png" alt="UI/UX Design - PetShop">
+                            <div class="gallery-overlay">
+                                <h3>UI/UX Design</h3>
+                                <p>Aplicativo PetShop</p>
+                                <button class="btn btn-outline view-details" data-project="digital-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Digital</span>
+                            <h3>PetLove App</h3>
+                            <p>Design de interface e experiência do usuário</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 -->
+                <div class="gallery-item branding" data-category="branding">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="Cruzeiro.png" alt="Redesign de Marca - Time de Futebol">
+                            <div class="gallery-overlay">
+                                <h3>Branding Esportivo</h3>
+                                <p>Time de Futebol</p>
+                                <button class="btn btn-outline view-details" data-project="sports-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Branding</span>
+                            <h3>Cruzeiro EC</h3>
+                            <p>Identidade visual moderna para clube esportivo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 -->
+                <div class="gallery-item social" data-category="social">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="CRAS lançamentostory 10.1.jpg" alt="Campanha Impressa - Revista">
+                            <div class="gallery-overlay">
+                                <h3>Campanha Impressa</h3>
+                                <p>Revista Especializada</p>
+                                <button class="btn btn-outline view-details" data-project="print-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Print</span>
+                            <h3>CRAS Magazine</h3>
+                            <p>Série de anúncios para revista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 7 -->
+                <div class="gallery-item social" data-category="social">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="PortifolioLuc/rod1.jpg" alt="Social Media - Chopperia">
+                            <div class="gallery-overlay">
+                                <h3>Social Media</h3>
+                                <p>Chopperia Local</p>
+                                <button class="btn btn-outline view-details" data-project="social2-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Social Media</span>
+                            <h3>Rodeio Chopperia</h3>
+                            <p>Gestão completa de mídias sociais</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 8 -->
+                 <div class="gallery-item packaging" data-category="packaging">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="PortifolioLuc/f3.png" alt="Social Media - Chopperia">
+                            <div class="gallery-overlay">
+                                <h3>Packaging</h3>
+                                <p>Projeto Faculdade - Fanzine</p>
+                                <button class="btn btn-outline view-details" data-project="packaging2-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Packaging</span>
+                            <h3>Fanzine - Be The Cowboy</h3>
+                            <p>Design de Fancine para trabalho na Faculdade</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 9 -->
+                 <div class="gallery-item branding" data-category="branding">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="PortifolioLuc/a1.png" alt="Identidade Visual - Cantor Single Sertanejo">
+                            <div class="gallery-overlay">
+                                <h3>Identidade Visual</h3>
+                                <p>Cantor Single Sertanejo</p>
+                                <button class="btn btn-outline view-details" data-project="sports2-project">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="project-category">Branding</span>
+                            <h3>Armando Neris</h3>
+                            <p>Identidade visual moderna para Cantor Single Sertanejo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Detalhes do Projeto -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-container">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="main-image">
+                        <img id="modalMainImage" src="" alt="">
+                    </div>
+                    <div class="thumbnail-container">
+                        <!-- Thumbnails serão adicionados via JavaScript -->
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <span class="project-category" id="modalCategory"></span>
+                    <p id="modalDescription"></p>
+                    <div class="project-details">
+                        <h4>Detalhes do Projeto</h4>
+                        <ul id="modalDetails">
+                            <!-- Detalhes serão adicionados via JavaScript -->
+                        </ul>
+                    </div>
+                    <div class="project-testimonial" id="modalTestimonial">
+                        <!-- Depoimento será adicionado via JavaScript -->
+                    </div>
+                    <a href="home.html#contato" class="btn btn-primary">Quero um projeto como este</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <section class="section-cta reveal-animated">
+            <div class="container">
+                <p>Quer se tornar o próximo cliente satisfeito e transformar a identidade visual da sua marca?</p>
+                <a href="home.html#contato" class="btn btn-primary">Entre em Contato Agora!</a>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Lucas Grafi</h2>
+                    <p>Design Gráfico & Direção de Arte</p>
+                </div>
+                <div class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Lucas Grafi. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Filtro do portfólio
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Modal de projeto
+        const viewButtons = document.querySelectorAll('.view-details');
+        const projectModal = document.getElementById('projectModal');
+        const closeModal = document.querySelector('.close-modal');
+        
+        // Dados dos projetos (pode ser substituído por uma chamada API no futuro)
+        const projectsData = {
+            'branding-project': {
+                title: 'Jales Pinturas - Redesign de Marca',
+                category: 'Branding',
+                description: 'Revitalização completa da identidade visual para uma empresa de pintura residencial e comercial, com foco em transmitir profissionalismo e confiança.',
+                images: ['jales.png',], // Adicione mais imagens conforme necessário
+                details: [
+                    'Identidade Visual Completa',
+                    'Manual da Marca',
+                    'Aplicação em Materiais de Divulgação',
+                    'Sistema de Cores e Tipografia'
+                ],
+                testimonial: {
+                    text: '"O Lucas transformou completamente a percepção da nossa marca no mercado. O novo design reflete exatamente o profissionalismo que buscamos transmitir."',
+                    author: 'Carlos Jales',
+                    position: 'Proprietário - Jales Pinturas'
+                }
+            },
+            'social-project': {
+                title: 'Lanchonete Sabor & Arte - Social Media',
+                category: 'Social Media',
+                description: 'Gestão completa de mídias sociais para uma lanchonete local, com criação de conteúdo estratégico para aumentar o engajamento e visitas ao estabelecimento.',
+                images: ['lanchonetes.jpg','PortifolioLuc/ki1.jpg','PortifolioLuc/ki2.jpg','PortifolioLuc/ki3.jpg'], // Adicione mais imagens conforme necessário
+                details: [
+                    'Planejamento de Conteúdo Mensal',
+                    'Criação de Artes e Copies',
+                    'Gestão de Comunidade',
+                    'Relatórios de Performance'
+                ],
+                testimonial: {
+                    text: '"Nossas redes sociais nunca estiveram tão ativas! O Lucas entendeu perfeitamente nosso público e criou conteúdos que realmente engajam."',
+                    author: 'Ana Paula Silva',
+                    position: 'Gerente - Sabor & Arte'
+                }
+            },
+            'packaging-project': {
+                title: 'Café Aroma - Design de Embalagem',
+                category: 'Packaging',
+                description: 'Criação de linha de embalagens premium para cafés especiais, com foco em destacar a qualidade do produto e transmitir sofisticação.',
+                images: ['CAFEEEEEE.png','cafeteria 2.png'], // Adicione mais imagens conforme necessário
+                details: [
+                    'Design de Embalagem Primária e Secundária',
+                    'Sistema de Identificação de Variantes',
+                    'Artes para Produção',
+                    'Mockups 3D'
+                ],
+                testimonial: {
+                    text: '"As embalagens criadas pelo Lucas não apenas protegem nosso produto, mas se tornaram um diferencial competitivo no ponto de venda."',
+                    author: 'Ricardo Mendes',
+                    position: 'Diretor Comercial - Café Aroma'
+                }
+            },
+            'digital-project': {
+                title: 'PetLove App - UI/UX Design',
+                category: 'Digital',
+                description: 'Design de interface e experiência do usuário para aplicativo de serviços de PetShop, com foco em usabilidade e engajamento.',
+                images: ['app.png'], // Adicione mais imagens conforme necessário
+                details: [
+                    'Wireframes e Protótipos',
+                    'Design System Completo',
+                    'Testes de Usabilidade',
+                    'Guia de Estilo'
+                ],
+                testimonial: {
+                    text: '"O aplicativo desenvolvido com o Lucas superou nossas expectativas em termos de usabilidade e engajamento dos usuários."',
+                    author: 'Mariana Torres',
+                    position: 'CEO - PetLove'
+                }
+            },
+            'sports-project': {
+                title: 'Cruzeiro EC - Branding Esportivo',
+                category: 'Branding',
+                description: 'Redesign da identidade visual para um time de futebol, mantendo a tradição mas com uma abordagem moderna e impactante.',
+                images: ['Cruzeiro.png'], // Adicione mais imagens conforme necessário
+                details: [
+                    'Identidade Visual Completa',
+                    'Aplicação em Uniformes',
+                    'Material Promocional',
+                    'Diretrizes de Uso da Marca'
+                ],
+                testimonial: {
+                    text: '"O Lucas conseguiu captar a essência do nosso clube e traduzi-la em uma identidade visual moderna que agradou torcedores e patrocinadores."',
+                    author: 'João Carlos',
+                    position: 'Diretor de Marketing - Cruzeiro EC'
+                }
+            },
+            'print-project': {
+                title: 'CRAS Magazine - Campanha Impressa',
+                category: 'Print',
+                description: 'Série de anúncios para revista especializada, com foco em transmitir credibilidade e despertar o interesse do público-alvo.',
+                images: ['CRAS lançamentostory 10.1.jpg'], // Adicione mais imagens conforme necessário
+                details: [
+                    'Conceito Criativo',
+                    'Direção de Arte',
+                    'Diagramação',
+                    'Preparação para Impressão'
+                ],
+                testimonial: {
+                    text: '"Os anúncios criados pelo Lucas foram os que tiveram melhor performance em nossa revista, gerando ótimos resultados para nossos anunciantes."',
+                    author: 'Fernanda Lima',
+                    position: 'Editora Chefe - CRAS Magazine'
+                }
+            },
+            'social2-project': {
+                title: 'Rodeio Chopperia - Social Media',
+                category: 'Social Media',
+                description: 'Gestão completa de mídias sociais para uma Bar local, com criação de conteúdo estratégico para aumentar o engajamento e visitas ao estabelecimento.',
+                images: ['PortifolioLuc/rod1.jpg','PortifolioLuc/rod2.jpg'], // Adicione mais imagens conforme necessário
+                details: [
+                    'Planejamento de Conteúdo Mensal',
+                    'Criação de Artes e Copies',
+                    'Gestão de Comunidade',
+                    'Relatórios de Performance'
+                ],
+                testimonial: {
+                    text: '"Nossas redes sociais nunca estiveram tão ativas! O Lucas entendeu perfeitamente nosso público e criou conteúdos que realmente engajam."',
+                    author: 'Roberto Valadão Gimene',
+                    position: 'Gerente - Rodeio Chopperia'
+                }
+            },
+            'packaging2-project': {
+                title: 'Be The Cowboy - Fanzine Design',
+                category: 'Packaging',
+                description: 'Um fanzine expressivo, coeso e autêntico, baseado em um cantor solo. Utilizando a metodologia de Bruno Munari como guia para o processo criativo.',
+                images: ['PortifolioLuc/f1.png','PortifolioLuc/f2.png','PortifolioLuc/f3.png'], // Adicione mais imagens conforme necessário
+                details: [
+                    'Design de Embalagem Primária e Secundária',
+                    'Sistema de Identificação de Variantes',
+                    'Artes para Produção',
+                    'Mockups 3D'
+                ],
+                testimonial: {
+                    text: '"As embalagens criadas pelo Lucas não apenas protegem nosso produto, mas se tornaram um diferencial competitivo no ponto de venda."',
+                    author: 'Fabiano Rocha',
+                    position: 'Professor De Faculdade - UNIRV'
+                }
+            },
+            'sports2-project': {
+                title: 'Armando Neris - Identidade Visual',
+                category: 'Branding',
+                description: 'Redesign da identidade visual para um Cantor de Sertanejo, mantendo a tradição mas com uma abordagem moderna e impactante.',
+                images: ['PortifolioLuc/a2.png','PortifolioLuc/a3.png','PortifolioLuc/a4.png'], // Adicione mais imagens conforme necessário
+                details: [
+                    'Identidade Visual Completa',
+                    'Material Promocional',
+                    'Diretrizes de Uso da Marca'
+                ],
+                testimonial: {
+                    text: '"O Lucas conseguiu captar a essência do meu nome e traduzi-la em uma identidade visual moderna que agradou varios fans para minha música"',
+                    author: 'Armando Neris',
+                    position: 'Cantor e Compositor de Musica Sertaneja'
+                }
+            },
+        };
+
+        viewButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const projectId = button.getAttribute('data-project');
+                const projectData = projectsData[projectId];
+                
+                // Preenche o modal com os dados do projeto
+                document.getElementById('modalTitle').textContent = projectData.title;
+                document.getElementById('modalCategory').textContent = projectData.category;
+                document.getElementById('modalDescription').textContent = projectData.description;
+                
+                // Limpa e preenche os detalhes
+                const detailsList = document.getElementById('modalDetails');
+                detailsList.innerHTML = '';
+                projectData.details.forEach(detail => {
+                    const li = document.createElement('li');
+                    li.textContent = detail;
+                    detailsList.appendChild(li);
+                });
+                
+                // Preenche o depoimento se existir
+                const testimonialDiv = document.getElementById('modalTestimonial');
+                if (projectData.testimonial) {
+                    testimonialDiv.innerHTML = `
+                        <blockquote>
+                            <p>${projectData.testimonial.text}</p>
+                            <cite>
+                                <strong>${projectData.testimonial.author}</strong>
+                                <span>${projectData.testimonial.position}</span>
+                            </cite>
+                        </blockquote>
+                    `;
+                    testimonialDiv.style.display = 'block';
+                } else {
+                    testimonialDiv.style.display = 'none';
+                }
+                
+                // Configura a galeria de imagens
+                const mainImage = document.getElementById('modalMainImage');
+                mainImage.src = projectData.images[0];
+                mainImage.alt = projectData.title;
+                
+                const thumbnailContainer = document.querySelector('.thumbnail-container');
+                thumbnailContainer.innerHTML = '';
+                
+                projectData.images.forEach((image, index) => {
+                    const thumbnail = document.createElement('img');
+                    thumbnail.src = image;
+                    thumbnail.alt = `Imagem ${index + 1} do projeto ${projectData.title}`;
+                    thumbnail.addEventListener('click', () => {
+                        mainImage.src = image;
+                        // Remove active class from all thumbnails
+                        document.querySelectorAll('.thumbnail-container img').forEach(img => {
+                            img.classList.remove('active');
+                        });
+                        // Add active class to clicked thumbnail
+                        thumbnail.classList.add('active');
+                    });
+                    
+                    // Ativa o primeiro thumbnail
+                    if (index === 0) thumbnail.classList.add('active');
+                    
+                    thumbnailContainer.appendChild(thumbnail);
+                });
+                
+                // Mostra o modal
+                projectModal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Fecha o modal
+        closeModal.addEventListener('click', () => {
+            projectModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Fecha o modal ao clicar fora
+        window.addEventListener('click', (e) => {
+            if (e.target === projectModal) {
+                projectModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Atualiza o ano no footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        window.addEventListener('DOMContentLoaded', () => {
+    const defaultFilter = document.querySelector('.filter-btn[data-filter="all"]');
+    if (defaultFilter) {
+        defaultFilter.click();
+    }
+});
+
+    </script>
+</body>
+</html>

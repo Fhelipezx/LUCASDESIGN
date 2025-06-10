@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Serviços</title>
+    <link rel="stylesheet" href="ESTILO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="home.html"><img src="ChatGPT Image 23 de mai. de 2025, 10_45_19.png" alt="uau"></a>
+                    <a href="#">Lucas Grafi</a>
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="servicos.html">Serviços</a>
+                        <li><a href="Portifolio.html">Portifólio</a></li>
+                        <li><a href="Depoimentos.html">Depoimentos</a></li>
+                        <li><a href="#contato" class="btn btn-primary">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="nav-mobile" id="mobile-menu">
+            <button class="close-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato" class="btn btn-primary">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Serviços</h2>
+                <p>Ofereço soluções completas em design gráfico e estratégia visual para empresas que buscam se destacar no mercado.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal-animated">
+                    <h3>Branding</h3>
+                    <p>Desenvolvimento de identidade visual, logotipos, guidelines e aplicações para sua marca.</p>
+                    <a href="#" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal-animated">
+                    <h3>Design Editorial</h3>
+                    <p>Criação de revistas, catálogos, relatórios e materiais impressos com design impactante.</p>
+                    <a href="#" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal-animated">
+                    <h3>Publicidade</h3>
+                    <p>Campanhas publicitárias integradas para mídia digital, impressa e out-of-home.</p>
+                    <a href="#" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal-animated">
+                    <h3>Social Media</h3>
+                    <p>Criação de conteúdo visual para redes sociais com estratégia de engajamento.</p>
+                    <a href="#" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal-animated">
+                    <h3>UI/UX Design</h3>
+                    <p>Design de interfaces e experiência do usuário para websites e aplicativos.</p>
+                    <a href="#" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card reveal-animated">
+                    <h3>Consultoria</h3>
+                    <p>Assessoria em estratégia visual e comunicação para empresas e profissionais.</p>
+                    <a href="#" class="service-link">
+                        Saiba mais <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <section class="section-cta reveal-animated">
+            <div class="container">
+                <p>Quer se tornar o próximo cliente satisfeito e transformar a identidade visual da sua marca?</p>
+                <a href="home.html#contato" class="btn btn-primary">Entre em Contato Agora!</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Lucas Grafi</h2>
+                    <p>Design Gráfico & Direção de Arte</p>
+                </div>
+                <div class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Lucas Grafi. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="top.js"></script> </body>
+    <!-- Adicione este código antes do fechamento do body na página de serviços -->
+
+<!-- Modal de Serviço - Branding -->
+<div class="service-modal" id="brandingModal">
+  <div class="modal-container">
+    <button class="close-modal"><i class="fas fa-times"></i></button>
+    <div class="modal-header">
+      <div class="service-icon branding-icon">
+        <i class="fas fa-paint-brush"></i>
+      </div>
+      <h2>Branding</h2>
+    </div>
+    
+    <div class="service-concept">
+      <h3><i class="fas fa-lightbulb"></i> O Conceito</h3>
+      <p>Branding é muito mais do que criar um logotipo. É o processo estratégico de construção de uma marca forte e memorável que se conecta emocionalmente com seu público-alvo. Trabalhamos para desenvolver uma identidade visual coerente que transmita os valores e a personalidade da sua empresa em todos os pontos de contato com o cliente.</p>
+    </div>
+    
+    <div class="service-details">
+      <div class="service-process">
+        <h3><i class="fas fa-tasks"></i> Nosso Processo</h3>
+        <ul>
+          <li>Pesquisa de mercado e análise de concorrentes</li>
+          <li>Definição de posicionamento e valores da marca</li>
+          <li>Desenvolvimento de conceito visual e naming</li>
+          <li>Criação de logotipo e identidade visual</li>
+          <li>Elaboração de manual de marca completo</li>
+          <li>Aplicação em materiais corporativos</li>
+        </ul>
+      </div>
+      
+      <div class="service-benefits">
+        <h3><i class="fas fa-star"></i> Benefícios</h3>
+        <ul>
+          <li>Reconhecimento instantâneo da marca</li>
+          <li>Diferenciação da concorrência</li>
+          <li>Construção de confiança e credibilidade</li>
+          <li>Consistência em todos os canais</li>
+          <li>Conexão emocional com o público</li>
+          <li>Valorização do negócio a longo prazo</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="service-cta">
+      <p>Pronto para transformar a identidade visual da sua empresa?</p>
+      <a href="home.html#contato" class="btn btn-primary">Solicitar Orçamento</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de Serviço - Design Editorial -->
+<div class="service-modal" id="editorialModal">
+  <div class="modal-container">
+    <button class="close-modal"><i class="fas fa-times"></i></button>
+    <div class="modal-header">
+      <div class="service-icon editorial-icon">
+        <i class="fas fa-book-open"></i>
+      </div>
+      <h2>Design Editorial</h2>
+    </div>
+    
+    <div class="service-concept">
+      <h3><i class="fas fa-lightbulb"></i> O Conceito</h3>
+      <p>O Design Editorial é a arte de organizar elementos visuais e textuais em publicações impressas ou digitais. Combinamos tipografia, layout, cores e imagens para criar materiais que não apenas comunicam informações, mas também proporcionam uma experiência de leitura agradável e memorável, mantendo a identidade da sua marca.</p>
+    </div>
+    
+    <div class="service-details">
+      <div class="service-process">
+        <h3><i class="fas fa-tasks"></i> Nosso Processo</h3>
+        <ul>
+          <li>Briefing detalhado e definição de objetivos</li>
+          <li>Pesquisa de referências e tendências</li>
+          <li>Desenvolvimento de conceito visual</li>
+          <li>Criação de grid e estrutura de layout</li>
+          <li>Diagramação e tratamento de imagens</li>
+          <li>Revisão e ajustes finais</li>
+        </ul>
+      </div>
+      
+      <div class="service-benefits">
+        <h3><i class="fas fa-star"></i> Benefícios</h3>
+        <ul>
+          <li>Comunicação clara e eficiente</li>
+          <li>Hierarquia visual que guia a leitura</li>
+          <li>Reforço da identidade da marca</li>
+          <li>Maior engajamento do leitor</li>
+          <li>Valorização do conteúdo</li>
+          <li>Materiais profissionais e impactantes</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="service-cta">
+      <p>Precisa de materiais impressos ou digitais que impressionem?</p>
+      <a href="home.html#contato" class="btn btn-primary">Solicitar Orçamento</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de Serviço - Publicidade -->
+<div class="service-modal" id="publicidadeModal">
+  <div class="modal-container">
+    <button class="close-modal"><i class="fas fa-times"></i></button>
+    <div class="modal-header">
+      <div class="service-icon publicidade-icon">
+        <i class="fas fa-ad"></i>
+      </div>
+      <h2>Publicidade</h2>
+    </div>
+    
+    <div class="service-concept">
+      <h3><i class="fas fa-lightbulb"></i> O Conceito</h3>
+      <p>A Publicidade é a arte de comunicar ideias e promover produtos ou serviços de forma persuasiva. Desenvolvemos campanhas publicitárias integradas que capturam a atenção do público-alvo, transmitem mensagens claras e geram resultados mensuráveis, seja em mídia digital, impressa ou out-of-home.</p>
+    </div>
+    
+    <div class="service-details">
+      <div class="service-process">
+        <h3><i class="fas fa-tasks"></i> Nosso Processo</h3>
+        <ul>
+          <li>Análise de mercado e público-alvo</li>
+          <li>Definição de estratégia e conceito criativo</li>
+          <li>Desenvolvimento de mensagens-chave</li>
+          <li>Criação de peças publicitárias</li>
+          <li>Adaptação para diferentes canais</li>
+          <li>Acompanhamento e análise de resultados</li>
+        </ul>
+      </div>
+      
+      <div class="service-benefits">
+        <h3><i class="fas fa-star"></i> Benefícios</h3>
+        <ul>
+          <li>Aumento da visibilidade da marca</li>
+          <li>Comunicação eficaz com o público-alvo</li>
+          <li>Diferenciação da concorrência</li>
+          <li>Geração de leads e conversões</li>
+          <li>Fortalecimento do posicionamento</li>
+          <li>Campanhas memoráveis e impactantes</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="service-cta">
+      <p>Quer criar campanhas publicitárias que realmente funcionam?</p>
+      <a href="home.html#contato" class="btn btn-primary">Solicitar Orçamento</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de Serviço - Social Media -->
+<div class="service-modal" id="socialModal">
+  <div class="modal-container">
+    <button class="close-modal"><i class="fas fa-times"></i></button>
+    <div class="modal-header">
+      <div class="service-icon social-icon">
+        <i class="fas fa-share-alt"></i>
+      </div>
+      <h2>Social Media</h2>
+    </div>
+    
+    <div class="service-concept">
+      <h3><i class="fas fa-lightbulb"></i> O Conceito</h3>
+      <p>Social Media é a criação de conteúdo visual e estratégico para redes sociais que engaja, informa e converte. Desenvolvemos materiais que mantêm a consistência da sua marca enquanto se adaptam às particularidades de cada plataforma, criando uma presença digital forte e autêntica.</p>
+    </div>
+    
+    <div class="service-details">
+      <div class="service-process">
+        <h3><i class="fas fa-tasks"></i> Nosso Processo</h3>
+        <ul>
+          <li>Análise de perfil e audiência</li>
+          <li>Definição de estratégia de conteúdo</li>
+          <li>Planejamento de calendário editorial</li>
+          <li>Criação de templates e identidade visual</li>
+          <li>Produção de conteúdo para cada plataforma</li>
+          <li>Monitoramento e otimização</li>
+        </ul>
+      </div>
+      
+      <div class="service-benefits">
+        <h3><i class="fas fa-star"></i> Benefícios</h3>
+        <ul>
+          <li>Presença digital consistente e profissional</li>
+          <li>Maior engajamento com o público</li>
+          <li>Construção de comunidade ao redor da marca</li>
+          <li>Aumento de tráfego e conversões</li>
+          <li>Fortalecimento do relacionamento com clientes</li>
+          <li>Conteúdo relevante e compartilhável</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="service-cta">
+      <p>Quer destacar sua marca nas redes sociais?</p>
+      <a href="home.html#contato" class="btn btn-primary">Solicitar Orçamento</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de Serviço - UI/UX Design -->
+<div class="service-modal" id="uiuxModal">
+  <div class="modal-container">
+    <button class="close-modal"><i class="fas fa-times"></i></button>
+    <div class="modal-header">
+      <div class="service-icon uiux-icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <h2>UI/UX Design</h2>
+    </div>
+    
+    <div class="service-concept">
+      <h3><i class="fas fa-lightbulb"></i> O Conceito</h3>
+      <p>UI/UX Design é a combinação de estética visual (UI) com usabilidade e experiência do usuário (UX). Criamos interfaces digitais que não apenas são visualmente atraentes, mas também intuitivas e fáceis de usar, proporcionando uma experiência agradável que converte visitantes em clientes.</p>
+    </div>
+    
+    <div class="service-details">
+      <div class="service-process">
+        <h3><i class="fas fa-tasks"></i> Nosso Processo</h3>
+        <ul>
+          <li>Pesquisa de usuários e análise de necessidades</li>
+          <li>Arquitetura de informação e fluxos de navegação</li>
+          <li>Wireframes e protótipos de baixa fidelidade</li>
+          <li>Design visual e sistema de componentes</li>
+          <li>Protótipos interativos e testes de usabilidade</li>
+          <li>Documentação para desenvolvimento</li>
+        </ul>
+      </div>
+      
+      <div class="service-benefits">
+        <h3><i class="fas fa-star"></i> Benefícios</h3>
+        <ul>
+          <li>Interfaces intuitivas e fáceis de usar</li>
+          <li>Redução da curva de aprendizado</li>
+          <li>Aumento nas taxas de conversão</li>
+          <li>Diminuição de abandono e frustração</li>
+          <li>Experiência consistente em todos os dispositivos</li>
+          <li>Diferenciação visual da concorrência</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="service-cta">
+      <p>Quer criar interfaces digitais que encantam e convertem?</p>
+      <a href="home.html#contato" class="btn btn-primary">Solicitar Orçamento</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de Serviço - Consultoria -->
+<div class="service-modal" id="consultoriaModal">
+  <div class="modal-container">
+    <button class="close-modal"><i class="fas fa-times"></i></button>
+    <div class="modal-header">
+      <div class="service-icon consultoria-icon">
+        <i class="fas fa-comments"></i>
+      </div>
+      <h2>Consultoria</h2>
+    </div>
+    
+    <div class="service-concept">
+      <h3><i class="fas fa-lightbulb"></i> O Conceito</h3>
+      <p>A Consultoria em Design é um serviço estratégico que ajuda empresas a identificar oportunidades, resolver problemas e otimizar sua comunicação visual. Oferecemos orientação especializada para alinhar sua estratégia de design com os objetivos de negócio, maximizando o retorno sobre o investimento em design.</p>
+    </div>
+    
+    <div class="service-details">
+      <div class="service-process">
+        <h3><i class="fas fa-tasks"></i> Nosso Processo</h3>
+        <ul>
+          <li>Diagnóstico da situação atual</li>
+          <li>Identificação de pontos fortes e fracos</li>
+          <li>Definição de objetivos e métricas</li>
+          <li>Desenvolvimento de estratégia visual</li>
+          <li>Recomendações práticas e acionáveis</li>
+          <li>Acompanhamento e avaliação de resultados</li>
+        </ul>
+      </div>
+      
+      <div class="service-benefits">
+        <h3><i class="fas fa-star"></i> Benefícios</h3>
+        <ul>
+          <li>Visão externa e especializada</li>
+          <li>Alinhamento entre design e objetivos de negócio</li>
+          <li>Otimização de processos e recursos</li>
+          <li>Identificação de oportunidades de inovação</li>
+          <li>Tomada de decisões baseada em dados</li>
+          <li>Transferência de conhecimento para equipe interna</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="service-cta">
+      <p>Precisa de orientação estratégica para sua comunicação visual?</p>
+      <a href="home.html#contato" class="btn btn-primary">Solicitar Orçamento</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

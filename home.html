@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Grafi - Design Gráfico & Direção de Arte</title>
+    <link rel="stylesheet" href="./ESTILO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("SiLp886uotqjkPpzZTkK6");
+
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_vjiv5uc", "template_kcw95on", this)
+      .then(() => {
+        document.getElementById("formSuccess").style.display = "block";
+        this.reset();
+      }, (error) => {
+        alert("Erro ao enviar: " + JSON.stringify(error));
+      });
+  });
+</script>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="home.html"><img src="ChatGPT Image 23 de mai. de 2025, 10_45_19.png" alt="uau"></a>
+                    <a href="home.html">Lucas Grafi</a>
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="servicos.html">Serviços</a>
+                        <li><a href="Portifolio.html">Portifólio</a></li>
+                        <li><a href="Depoimentos.html">Depoimentos</a></li>
+                        <li><a href="#contato" class="btn btn-primary">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="nav-mobile" id="mobile-menu">
+            <button class="close-menu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="#contato" class="btn btn-primary">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>A arte de um Criativo</h1>
+                    <p style="text-align: justify;">Meu processo de criação de anúncios que transformam ideias em resultados. Criar anúncios é sobre estratégia de negócios, entender as necessidades do seu cliente e gerar resultados concretos. Veja como o meu processo transforma ideias em criativos que convertem e geram retorno para sua empresa.</p>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary">
+                            Ver Projetos <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contato" class="btn btn-outline">Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="ChatGPT Image 23 de mai. de 2025, 11_38_55.png" alt="Dissecando um Criativo - Arte conceitual">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projetos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projetos em Destaque</h2>
+                <p>Uma seleção dos meus melhores trabalhos em design gráfico, branding e publicidade digital.</p>
+            </div>
+
+            <div class="projects-grid">
+    <div class="project-card" onclick="openGallery('social-media')">
+        <div class="project-image">
+            <img src="lanchonetes.jpg" alt="Campanha Digital">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="project-content">
+            <span class="project-category">Social Media</span>
+            <h3>Projeto restaurante</h3>
+            <p>Mídia social para uma empresa de Lanchonetes</p>
+            <div class="project-link">
+                Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
+            </div>
+        </div>
+    </div>
+                <div class="project-card" onclick="openGallery('branding')">
+                    <div class="project-image">
+                        <img src="jales.png" alt="Redesign de Marca">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Branding</span>
+                        <h3>Redesign de Marca</h3>
+                        <p>Revitalização da identidade visual para empresa de Pintura</p>
+                        <div class="project-link">
+                            Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openGallery('print')">
+                    <div class="project-image"> 
+                        <img src="CRAS lançamentostory 10.1.jpg" alt="Anúncios Impressos">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Print</span>
+                        <h3>Anúncios Impressos</h3>
+                        <p>Série de anúncios para revistas especializadas</p>
+                        <a href="#" class="project-link">
+                            Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openGallery('ui-ux')">
+                    <div class="project-image">
+                        <img src="app.png" alt="UI/UX Design">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Digital</span>
+                        <h3>UI/UX Design</h3>
+                        <p>Interface de aplicativo para serviço de PetShop</p>
+                        <a href="#" class="project-link">
+                            Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openGallery('embalagem')">
+                    <div class="project-image">
+                        <img src="cafee.png" alt="Embalagem">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Packaging</span>
+                        <h3>Embalagem</h3>
+                        <p>Design de embalagem para linha de Cafeteria</p>
+                        <a href="#" class="project-link">
+                            Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Cruzeiro.png" alt="Campanha Integrada">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content" onclick="openGallery('brand')">
+                        <span class="project-category">Branding</span>
+                        <h3>Redesign de Marca</h3>
+                        <p>Revitalização da identidade visual para Time de Futebol</p>
+                        <a href="#" class="project-link">
+                            Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-more">
+                <a href="Portifolio.html" class="btn btn-outline">
+                    Ver Todos os Projetos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="sobre mim.png" alt="Designer profile">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre Mim</h2>
+                    <p style="text-align: justify;">Tenho 22 anos e cursei Design Gráfico na Universidade de Rio Verde (UniRV)</p>
+                    <p style="text-align: justify;">Sou desde 2022 fissurado por artes digitais, desde posts para mídias sociais à capas de livros e revistas, sem deixar de lado minha satisfação em criar logotipos para marcas. Tudo isso para que você tenha uma marca de destaque no mercado.Minha abordagem combina estratégia de negócios, psicologia do consumidor e tendências visuais para criar designs que não apenas impressionam, mas também convertem. </p>
+                    <p style="text-align: justify;">Especializado em branding, design editorial, campanhas publicitárias e marketing digital, trabalho com empresas de todos os tamanhos para desenvolver sua identidade visual e estratégia de comunicação.</p>
+                    <a href="#" class="btn btn-primary">Meu Processo Criativo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Vamos Trabalhar Juntos</h2>
+                    <p>Estou disponível para projetos freelance, consultoria e parcerias. Entre em contato para discutirmos como posso ajudar a elevar sua marca.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>lucasgraficontato@gmail.com</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/olucasgrafi/?utm_source=ig_web_button_share_sheet" aria-label="Instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.behance.net/lucasgrafi" aria-label="Behance" target="_blank">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="https://wa.me/5564999194622" aria-label="Whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+               <form id="contactForm" class="contact-form">
+  <div class="form-success" id="formSuccess">
+    <p><strong>Mensagem enviada com sucesso!</strong></p>
+    <p>Entrarei em contato em breve.</p>
+  </div>
+
+  <div class="form-group">
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name" required autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" required autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Assunto</label>
+    <input type="text" name="subject" id="subject" required autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label for="message">Mensagem</label>
+    <textarea name="message" id="message" required autocomplete="off"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+</form>
+
+<div id="status"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Lucas Grafi</h2>
+                    <p>Design Gráfico & Direção de Arte</p>
+                </div>
+                <div class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Lucas Grafi. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="projects-gallery" id="projectsGallery">
+    <div class="gallery-container">
+        <div class="gallery-header">
+            <h2 id="galleryTitle">Projeto</h2>
+            <button class="close-gallery" onclick="closeGallery()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="gallery-content" id="galleryContent">
+            <!-- Conteúdo será preenchido via JavaScript -->
+        </div>
+        <div class="gallery-nav">
+            <button id="prevBtn" onclick="navigateGallery(-1)"><i class="fas fa-chevron-left"></i></button>
+            <span id="galleryCounter">1/3</span>
+            <button id="nextBtn" onclick="navigateGallery(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("WaCZIF12ZmA9Ac6n9");
+
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_vjiv5uc", "template_kcw95on", this)
+      .then(() => {
+        document.getElementById("formSuccess").style.display = "block";
+        this.reset();
+      }, (error) => {
+        alert("Erro ao enviar: " + JSON.stringify(error));
+      });
+  });
+</script>
+<script src="top.js"></script>
+</body>
+</html>
